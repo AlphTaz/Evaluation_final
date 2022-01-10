@@ -71,6 +71,16 @@ public function setItems ($z) {
     $this->contract = $z;
 }
 
+public function show_infos () {
+    echo "Name :" . " " . $this->name."\n";
+    echo "Surname :" . " " . $this->surname. "\n";
+    echo "Position :" . " " . $this->position. "\n";
+    echo "Sexe :" . " " . $this->sexe ."\n";
+    echo "Birth-Date :" . " " . $this->birthdate ."\n";
+    echo "Birth-Place :" . " " . $this->birthplace."\n";
+    echo "Wage :" . " " . $this->wage."\n";
+    echo "Contract :" . " " . $this->contract."\n";
+}
 }
 
 ?>
