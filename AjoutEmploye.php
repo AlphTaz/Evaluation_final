@@ -9,7 +9,7 @@
 <body>
   
 <?php 
-  require "Form.php";
+  require "class.php";
 
   $formulaire = new Form ($_POST)
     ?>
@@ -51,8 +51,7 @@
       
       echo (empty($_POST['Name']) && empty($_POST['Surname'])) ? 'Veuillez saisir un nom et un prénom valide' :
     
-       'Bienvenue ' . $_POST['nom'] . $_POST['prenom'] . '</br>' .'Vous êtes maintenant connecté';
-      
+       $_POST['Name'] . '</br>' . $_POST['Surname'] . '</br>' . $_POST['Position'] . '</br>' .$_POST['Sexe'] . '</br>' .$_POST['Birth-Date'] . '</br>' . $_POST['Birth-Place'] . '</br>' .$_POST['Wage'] . '</br>' . $_POST['Contract'] . '</br>' ;      
 
       ?>
 
