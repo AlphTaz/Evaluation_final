@@ -78,7 +78,7 @@ public function show_infos () {
     echo "Sexe :" . " " . $this->sexe ."\n";
     echo "Birth-Date :" . " " . $this->birthdate ."\n";
     echo "Birth-Place :" . " " . $this->birthplace."\n";
-    echo "Wage :" . " " . $this->wage."\n";
+    echo "Wage :" . " " . $this->wage." " ."$" . "\n";
     echo "Contract :" . " " . $this->contract."\n";
 }
 }
