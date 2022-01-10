@@ -3,6 +3,7 @@
 // Edition de la classe personnage avec les différents attributs
 
 class Employe {
+    public $id; 
     public $name;
     public $surname;
     public $position;
@@ -16,6 +17,7 @@ class Employe {
 // Création de la fonction constructor
 
 public function __construct (
+     $id,
      $name,
      $surname,
      $position,
@@ -27,6 +29,7 @@ public function __construct (
 
 ) {
 
+    $this->id = $id;
     $this->name = $name;
     $this->surname = $surname;
     $this->position = $position;
@@ -72,6 +75,8 @@ public function setItems ($z) {
 }
 
 public function show_infos () {
+
+    echo "Id :" . " " . $this->id."\n";
     echo "Name :" . " " . $this->name."\n";
     echo "Surname :" . " " . $this->surname. "\n";
     echo "Position :" . " " . $this->position. "\n";
